@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.maltedahlberg.com'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Malte Dahlberg Website'
 
 [build]
   [build.buildStats]
