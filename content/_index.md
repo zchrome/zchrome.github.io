@@ -16,6 +16,5 @@ title: "Malte Dahlberg - Home"
 
 mailto: contact 𑜾 maltedahlberg ~dot~ com
 
-Instagram: @accidensity
-
-Githib: https://github.com/zchrome/
+Instagram: [@accidensity](https://www.instagram.com/accidensity)
+Github: [@zchrome](https://github.com/zchrome/)
