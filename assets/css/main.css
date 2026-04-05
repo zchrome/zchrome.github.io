@@ -2,52 +2,64 @@
 @plugin "@tailwindcss/typography";
 @source "hugo_stats.json";
 
+/* Regular */
 @font-face {
-    font-family: "Happy Times at the IKOB New Game Plus Edition";
-    font-weight: normal;
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff")
+            format("woff");
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff2")
-        format("woff2");
 }
 
+/* Italic */
 @font-face {
-    font-family: "Happy Times at the IKOB New Game Plus Edition";
-    font-weight: normal;
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff")
+            format("woff");
+    font-weight: 400;
     font-style: italic;
     font-display: swap;
-    src: url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_italic_master_web.woff2")
-        format("woff2");
 }
 
+/* Bold */
 @font-face {
-    font-family: "Happy Times at the IKOB New Game Plus Edition";
-    font-weight: normal;
-    font-style: bold;
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: normal;
     font-display: swap;
-    src: url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_bold_master_web.woff2")
-        format("woff2");
 }
 
 @font-face {
-    font-family: "TK Revy";
-    font-weight: normal;
+    font-family: "Revy";
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
     src: url("/fonts/tk_fonts/TK_Revy.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "TK Strata";
-    font-weight: normal;
+    font-family: "Strata";
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
     src: url("/fonts/tk_fonts/TK_Strata.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "TK Agitation";
-    font-weight: normal;
+    font-family: "Agitation";
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
     src: url("/fonts/tk_fonts/TK_Agitation.otf") format("opentype");
@@ -69,13 +81,13 @@
 }
 
 @theme {
-    --font-htikob: ui-serif, "Happy Times at the IKOB New Game Plus Edition";
+    --font-htikob: ui-serif, "Happy Times";
 
-    --font-alternate: ui-serif, "Ableton Sans Regular";
+    --font-alternate: ui-serif, "nothing_atm";
 
-    --font-revy: ui-serif, "TK Revy";
-    --font-agitation: ui-serif, "TK Agitation";
-    --font-strata: ui-serif, "TK Strata";
+    --font-revy: ui-serif, "Revy";
+    --font-agitation: ui-serif, "Agitation";
+    --font-strata: ui-serif, "Strata";
 
     --font-serif: ui-serif, "Times New Roman", Times, serif;
 }
