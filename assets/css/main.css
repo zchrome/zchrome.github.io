@@ -81,13 +81,13 @@
 }
 
 @theme {
-    --font-htikob: ui-serif, "Happy Times";
+    --font-htikob: "Happy Times", times, serif, ui-serif;
 
-    --font-alternate: ui-serif, "nothing_atm";
+    --font-alternate: "nothing_atm", times, serif, ui-serif;
 
-    --font-revy: ui-serif, "Revy";
-    --font-agitation: ui-serif, "Agitation";
-    --font-strata: ui-serif, "Strata";
+    --font-revy: "Revy", times, serif, ui-serif;
+    --font-agitation: "Agitation", times, serif, ui-serif;
+    --font-strata: "Strata", times, serif, ui-serif;
 
-    --font-serif: ui-serif, "Times New Roman", Times, serif;
+    --font-serif: "Times New Roman", Times, serif, ui-serif;
 }
