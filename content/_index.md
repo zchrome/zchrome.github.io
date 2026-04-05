@@ -14,7 +14,7 @@ title: "Malte Dahlberg - Home"
 
 <br />
 
-mailto: malte ~punkt~ dahlberg 𑜾 gmail ~punkt~ com
+mailto: contact 𑜾 maltedahlberg ~dot~ com
 
 Instagram: @accidensity
 
