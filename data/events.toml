@@ -13,9 +13,9 @@ eventdate = "2026-04-08"
 summary = "[*observations of the system of natural bodies*](https://fylkingen.se/en/events/observationer-av-naturkropparnas-system#title), live electronics, with Anna Fitoussi (performance), [Linnéa Johnels](https://linneajohnels.se) (concept, choreography), Fylkingen"
 
 [[events]]
-title = "observations of the system of natural bodies"
-eventdate = "2026-04-08"
-summary = "Live on-air composition on Radio Sydväst (88.9 MHz) w/ [Niklas Dahlqvist](https://niklasdahlqvist.net/), [Theodor Kentros](https://theodorkentros.com/), [Valerie Mol](https://eurodyke.eu/) (!!). Conceived and hosted by [Adam Fored](https://adamfored.com)"
+title = "radio sydväst"
+eventdate = "2026-04-24"
+summary = "Live-on-air realtime composition (!) on Radio Sydväst (88.9 MHz) w/ [Niklas Dahlqvist](https://niklasdahlqvist.net/), [Theodor Kentros](https://theodorkentros.com/), [Valerie Mol](https://eurodyke.eu/) (!!). Conceived and hosted by [Adam Fored](https://adamfored.com)"
 
 [[events]]
 title = "Ensemble Sirenology"
@@ -40,12 +40,12 @@ summary = "Live w/ [Helena Linder's](https://helenalinder.com) *Ensemble Sirenol
 [[events]]
 title = "ANSI 1"
 eventdate ="2025-05-21"
-summary = "Live electronics, *Sonic Archeology*, Fylkingen"
+summary = "Solo live set: BOSSMAN KAWAII (MIDI Madness), *[Sonic Archeology](https://fylkingen.se/en/events/sonic-archeology-eurodyke-niklas-dahlqvist-malte-dahlberg)*, Fylkingen"
 
 [[events]]
 title = "St Mark"
 eventdate ="2025-04-21"
-summary = "Solo live set, St. Mark's Church, Björkhagen, Stockholm"
+summary = "Solo electroacoustic live set, St. Mark's Church, Björkhagen, Stockholm"
 
 [[events]]
 title = "Feedback 1"
@@ -60,7 +60,7 @@ summary = "Amplified voice & performance, duo w/ [Theodor Kentros](https://theod
 [[events]]
 title = "RFO"
 eventdate = "2022-05-01"
-summary = "*RFO I* for facial recognition software and electronic sound, performed live by the *Royal Face Orchestra* (Kajsa Blom, Niklas Dahlqvist and Theodor Kentro), Royal College of Music, Stockholm"
+summary = "*RFO I* for facial recognition software and electronic sound, performed live by the *Royal Face Orchestra* (Kajsa Blom, [Niklas Dahlqvist](https://niklasdahlqvist.net/), [Theodor Kentros](https://theodorkentros.com/)), Royal College of Music, Stockholm"
 
 # – SOFTWARE – #
 
@@ -73,7 +73,7 @@ summary = "Max for Live: *Modern XY* (2025), a [recreation](https://github.com/z
 title = "Tusen Kulturhus Typefaces"
 eventdate = "2025-04-08"
 summary = '''
-Fonts: <span class="font-revy">TK REVY</span>, <span class="font-strata">TK STRATA</span> and <span class="font-agitation">TK Agitation</span> (2023), [typefaces based on hand lettering](), for the end-of-year publication by the course *Tusen Kulturhus*, Royal Institute of Art, Stockholm
+Fonts: <span class="font-revy">TK REVY</span>, <span class="font-strata">TK STRATA</span> and <span class="font-agitation">TK Agitation</span> (2023), [typefaces](/files/TK_Fonts_2023.zip) based on hand lettering, for the end-of-year publication for the course *Tusen Kulturhus* at the Royal Institute of Art, Stockholm
 '''
 
 # – TEACHING – #

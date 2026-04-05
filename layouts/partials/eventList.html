@@ -36,7 +36,7 @@ Hugo / Go Date Cheat Sheet (again, from an LLM so don't trust this blindly):
 <ul>
     {{ range sort $future "eventdate" "asc" }}
     <li class="mb-1.5">
-        <span class="italic font-alternate">{{ .eventdate | time.Format "2006" }}</span> <span class="[font-variant:small-caps]">{{ .eventdate | time.Format "January" }}</span> –/– {{ .summary | markdownify }}
+        <span class="italic font-alternate">{{ .eventdate | time.Format "2006" }}</span> <span class="[font-variant:small-caps]">{{ .eventdate | time.Format "January" }}</span> <span class="italic font-alternate">{{ .eventdate | time.Format "01" }}</span> –/– {{ .summary | markdownify }}
     </li>
     {{ end }}
 </ul>
