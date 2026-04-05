@@ -1,7 +1,3 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
-@source "hugo_stats.json";
-
 /* Regular */
 @font-face {
     font-family: "Happy Times";
@@ -43,27 +39,31 @@
 
 @font-face {
     font-family: "Revy";
+    src: url("/fonts/tk_fonts/TKRevy.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/tk_fonts/TKRevy.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Strata";
+    src: url("/fonts/tk_fonts/TKStrata.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/tk_fonts/TKStrata.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Agitation";
+    src: url("/fonts/tk_fonts/TKAgitation.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/tk_fonts/TKAgitation.woff2") format("woff2");
 }
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
 
 @keyframes bg-fadein {
     0% {
