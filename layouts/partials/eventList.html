@@ -1,0 +1,78 @@
+{{/* 
+This should pull data from the associated TOML file(s). It's pseudo-vibecoded so eh.
+- Should automatically stack things in "future" and "past" depending on the associated date.
+- Hooks for grabbing "misc" and "teaching" from the master "events.toml" file and putting that in their own spots in the page
+
+Hugo / Go Date Cheat Sheet (again, from an LLM so don't trust this blindly):
+
+- Go uses reference date: Mon Jan 2 15:04:05 MST 2006
+* Year = 2006, Month = Jan/January/01, Day = 02
+- Examples:
+"January 2006" → December 2025
+"02 Jan 2006" → 10 Dec 2025
+"2006-01-02" → 2025-12-10
+- Don’t use YYYY/MM/DD — Go ignores it
+- Store dates as "YYYY-MM-DD" or human-readable
+- Use time.Format for display and `now` for past/future filtering
+*/}}
+
+{{ $now := now }}
+
+{{ $future := slice }}
+{{ $past := slice }}
+
+{{ range .Site.Data.events.events }}
+{{ $eventDate := time .eventdate }}
+
+{{ if ge $eventDate $now }}
+{{ $future = $future | append (dict "title" .title "eventdate" $eventDate "summary" .summary) }}
+{{ else }}
+{{ $past = $past | append (dict "title" .title "eventdate" $eventDate "summary" .summary) }}
+{{ end }}
+{{ end }}
+
+<h2 id="works" class="">Future</h2>
+<br/>
+<ul>
+    {{ range sort $future "eventdate" "asc" }}
+    <li class="mb-1.5">
+        <span class="italic font-alternate">{{ .eventdate | time.Format "2006" }}</span> <span class="[font-variant:small-caps]">{{ .eventdate | time.Format "January" }}</span> –/– {{ .summary | markdownify }}
+    </li>
+    {{ end }}
+</ul>
+
+<br/>
+
+<h2 id="past" class="">Past</h2>
+<br/>
+<ul class ="list-['']">
+    {{ range sort $past "eventdate" "desc" }}
+    <li class="mb-1.5">
+        <span class="italic font-alternate">{{ .eventdate | time.Format "2006" }}</span> <span class="[font-variant:small-caps]">{{ .eventdate | time.Format "January" }}</span> –\– {{ .summary | markdownify }}
+    </li>
+    {{ end }}
+</ul>
+
+<br/>
+
+<h2 id="teaching" class="">Teaching</h2>
+<br/>
+<ul>
+    {{ range .Site.Data.events.teaching }}
+    <li class="mb-1.5">
+        <span class="italic font-alternate">{{ .eventdate | time.Format "2006" }}</span> <span class="[font-variant:small-caps]">{{ .eventdate | time.Format "January" }}</span> –\– <span class="">{{ .summary | markdownify }}</span>
+    </li>
+    {{ end }}
+</ul>
+
+<br/>
+
+<h2 id="misc_software" class="">Software, etc.</h2>
+<br/>
+<ul>
+    {{ range .Site.Data.events.misc }}
+    <li class="mb-1.5">
+     <span class="italic font-alternate">~ | </span> {{ .summary | markdownify }}
+    </li>
+    {{ end }}
+</ul>

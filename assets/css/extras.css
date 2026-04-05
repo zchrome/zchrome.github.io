@@ -1,0 +1,11 @@
+@keyframes parallax-effect {
+    to {
+        transform: translateY(100px);
+    }
+}
+
+#parallax {
+    animation: parallax-effect linear both;
+    animation-timeline: scroll(block root);
+    animation-range: 0px 200px;
+}

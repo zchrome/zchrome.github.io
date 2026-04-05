@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" charset="utf-8">
+    <title>Malte Dahlberg</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        {{ with (templates.Defer (dict "key" "global")) }} {{ partial "css.html"
+         . }} {{ end }}
+         
+         <!--
+         <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+         -->
+ 
+    </head>
+    <body
+        class="font-htikob tracking-normal text-lg md:text-base whitespace-normal bg-white prose-a:text-blue-800 prose-a:underline prose-a:underline-offset-2 prose-a:decoration-double prose-a:decoration-1 prose-a:hover:underline-offset-4 [&_em]:base"
+    >
+        <!--
+        <div class="scroll-anim w-screen h-screen bg-fixed bg-no-repeat opacity-0 -z-10 m-0 p-0 fixed overflow-hidden">
+            <img class="w-screen" src="/images/1.jpg"></img>
+        </div>
+        -->
+        
+        <div class="p-8"> 
+            <div class="flex flex-col items-center justify-start">
+                <div class="w-8/9 md:w-6/9 lg:w-4/10">
+                    
+                    {{ partial "header.html" . }} 
+                    
+                    <br \>
+                    
+                    {{ block "main" . }} {{ end }} 
+
+                    <!--Leave the footer out for now…-->
+                    
+                    {{/* partial "footer.html" . */}}
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

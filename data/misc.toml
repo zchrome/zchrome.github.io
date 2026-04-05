@@ -1,0 +1,12 @@
+# -------------------------------------------------------------------
+# TOML Quirk Reminder:
+# - [[events]] creates an array of tables.
+# - Each block with the same [[events]] name adds a new item to the array.
+# - Do NOT use [events] multiple times — that’s only for a single table.
+# - This is why we repeat [[events]] for every event.
+# -------------------------------------------------------------------
+
+[[misc]]
+title = "Modern XY"
+eventdate = "2025-04-08"
+summary = " Max for Live: *Modern XY* (2025), a [recreation](https://github.com/zchrome/modern_xy/releases/tag/0.1.2) of a classic 2010:s M4L device for the current decade"
