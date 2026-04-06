@@ -20,11 +20,11 @@ title = 'Malte Dahlberg Website'
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
     
-    [caches]
-      [caches.images]
-        dir = ':cacheDir/images'
-    
-    [markup]
-      [markup.goldmark]
-        [markup.goldmark.renderer]
-          unsafe = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

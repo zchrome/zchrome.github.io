@@ -1,11 +1,14 @@
-@keyframes parallax-effect {
-    to {
-        transform: translateY(100px);
+@keyframes bg-fadein {
+    0% {
+        filter: contrast(100%);
+    }
+    100% {
+        filter: contrast(200%);
     }
 }
 
-#parallax {
-    animation: parallax-effect linear both;
+.scroll-anim {
+    animation: bg-fadein linear both;
     animation-timeline: scroll(block root);
-    animation-range: 0px 200px;
+    animation-range: 25% 100%;
 }

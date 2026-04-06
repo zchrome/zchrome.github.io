@@ -1,0 +1,62 @@
+/* Regular */
+@font-face {
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_regular_master_web.woff")
+            format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Italic */
+@font-face {
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_italic_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_italic_master_web.woff")
+            format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: "Happy Times";
+    src:
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_bold_master_web.woff2")
+            format("woff2"),
+        url("/fonts/Happy-Times-at-the-IKOB/happy-times-NG_bold_master_web.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Revy";
+    src: url("/fonts/tk_fonts/TKRevy.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Strata";
+    src: url("/fonts/tk_fonts/TKStrata.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Agitation";
+    src: url("/fonts/tk_fonts/TKAgitation.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
