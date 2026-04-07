@@ -37,7 +37,7 @@ Hugo / Go Date Cheat Sheet (again, from an LLM so don't trust this blindly):
             >{{ .eventdate | time.Format "January" }}</span
         >
         <span class="italic font-alternate"
-            >{{ .eventdate | time.Format "01" }}</span
+            >{{ .eventdate | time.Format "02" }}</span
         >
         –/– {{ .summary | markdownify }}
     </li>
